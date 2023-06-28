@@ -1,9 +1,11 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>My Hide Web</title>
-  <link rel="stylesheet" href="/web/assets/style.css" >
+  <link rel="stylesheet" href="assets/style.css" >
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -13,26 +15,59 @@
 
   <nav>
     <ul>
-      <li><a href="#projects">Projects</a></li>
+      <li><a href="#projects" class="select">Projects</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#contact">Contact</a></li>
+      <li><a href="#features">Html</a></li>
     </ul>
   </nav>
 
-  <main>
+  <main><center>
+      <input type="search" class="search" placeholder="type to search project...">
+        </center>
     <section id="projects">
-      <h2>Projects</h2>
-      <article>
+      <h2>Projects <i class="fa-solid fa-book"></i> <span id="tagCount"></span></h2>
+      <article class="thread">
+        <div class="iconinfo">
+        <i class="fa fa-circle-exclamation" style="color:red;"></i>
+        <i class="fa fa-thumbtack"></i>
+        </div>
         <h3>Project 1</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non finibus leo, vitae vulputate elit.</p>
+        <p><a href="http://www.aminter.co.th" target="_blank"><i class="fa fa-link"></i> www.aminter.co.th</a></p>
+        <a href="#" class="link">
+            <span><i class="fa-solid fa-server"></i> DATABASE</span>
+        </a>
+        <iframe src="hacked/data/www.aminter.co.th/database.txt" height="20px" width="100%">
+            not supported
+        </iframe>
+        <p>Disclaimer : those are just for educational purposes only, not to access illegal.<br>
+        this sql injection is very dangerous because hackers can use payloads to inject by the link provided, like using a sql commands.</p>
       </article>
-      <!--<article>
+<article class="thread">
+        <div class="iconinfo">
+          <i class="fa fa-triangle-exclamation" style="color:gold;"></i>
+        </div>
         <h3>Project 2</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non finibus leo, vitae vulputate elit.</p>
+                <p><a href="http://kobralocks.com" target="_blank"><i class="fa fa-link"></i> kobralocks.com</a></p>
+        <p>This website is vuln webdav. Trought the ftp open, enemies will upload file free without admin permissions.</p>
+        <p>Don't worry about this website because it's not in controls now and an admin was standed a new same website but at the other server.</p>
+        <span>{website live preview}</span>
+        <iframe src="http://kobralocks.com" frameborder="0" height="300px" width="100%">not supported</iframe>
       </article>
-    -->
+      <!--
+      <article class="thread">
+        <div class="iconinfo">
+        </div>
+        <h3>Project 0</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius itaque dignissimos velit commodi fugit est non quidem labore cupiditate natus?</p>
+      </article>
+      -->
     </section>
-
+    <section id="features">
+        <h2>Html Script Tester</h2>
+        <p>will available!</p>
+        <p></p>
+    </section>
     <section id="about">
       <h2>About</h2>
       <p>Here i just upload my work actually don't known by somewhere?</p>
@@ -40,12 +75,23 @@
 
     <section id="contact">
       <h2>Contact</h2>
-      <p><a href=""><i class="fa-brands fa-youtube" style="color: red;"></i> Youtube</a><a href="" ><i class="fa-brands fa-telegram" style="color: rgb(7, 135, 255);"></i> Telegram</a></p>
+      <p><a href="#"><i class="fa-brands fa-youtube" style="color: red;"></i> Youtube</a><a href="#" ><i class="fa-brands fa-telegram" style="color: rgb(7, 135, 255);"></i> Telegram</a>
+      <a href="#"><i class="fa-brands fa-github"></i> Github</a>
+      <a href="#"><i class="fa-brands fa-google" style="color:lightblue;"></i> Google</a></p>
     </section>
   </main>
 
   <footer>
     <p>&copy; 2023 My Hide Projects. All rights reserved.</p>
   </footer>
+  <script>
+    window.addEventListener('DOMContentLoaded', function() {
+  var articles = document.querySelectorAll('.thread');
+  var tagCount = articles.length;
+  var tagCountElement = document.getElementById('tagCount');
+  tagCountElement.textContent = "("+tagCount+")";
+});
+
+  </script>
 </body>
 </html>
