@@ -1,97 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+<!--
+Template by : Daniel Hakim
+Follow me to news about this website hehe
+-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>My Hide Web</title>
-  <link rel="stylesheet" href="/web/assets/style.css" >
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css">
+    <title>HomePage</title>
+    <link rel="stylesheet" href="/web/assets/style.css">
 </head>
 <body>
-  <header>
-    <h1>Hide Web Show_off</h1>
-  </header>
-
-  <nav>
-    <ul>
-      <li><a href="#projects" class="select">Projects</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="#features">Html</a></li>
-    </ul>
-  </nav>
-
-  <main><center>
-      <input type="search" class="search" placeholder="type to search project...">
-        </center>
-    <section id="projects">
-      <h2>Projects <i class="fa-solid fa-book"></i> <span id="tagCount"></span></h2>
-      <article class="thread">
-        <div class="iconinfo">
-        <i class="fa fa-circle-exclamation" style="color:red;"></i>
-        <i class="fa fa-thumbtack"></i>
+    <nav>
+        <div class="bar">
+            <img src="/web/assets/mainlogo.png" alt="logo">
+            <ul class="listmenu">
+                <li><a href="#contents">Contents</a>
+                </li>
+                <li><a href="/web/data/">Data</a></li>
+                <li class="btndrop"><a>Tutorial <i class="fa-solid fa-caret-down"></i></a>
+                <ul class="drop-down">
+                    <li><a href="/web/tools/">Tools <i class="fa-solid fa-gear"></i></a></li>
+                    <li><a href="#">Read <i class="fa-brands fa-leanpub"></i></a></li>
+                </ul>
+                </li>
+            </ul>
         </div>
-        <h3>Project 1</h3>
-        <p><a href="http://www.aminter.co.th" target="_blank"><i class="fa fa-link"></i> www.aminter.co.th</a></p>
-        <a href="#" class="link">
-            <span><i class="fa-solid fa-server"></i> DATABASE</span>
-        </a>
-        <iframe src="hacked/data/www.aminter.co.th/database.txt" height="20px" width="100%">
-            not supported
-        </iframe>
-        <p>Disclaimer : those are just for educational purposes only, not to access illegal.<br>
-        this sql injection is very dangerous because hackers can use payloads to inject by the link provided, like using a sql commands.</p>
-      </article>
-<article class="thread">
-        <div class="iconinfo">
-          <i class="fa fa-triangle-exclamation" style="color:gold;"></i>
+    </nav>
+    <article>
+                <div class="landing">
+            <h2>Welcome</h2>
+            <p>Hello my friends <span>👋</span><br>Lets visit this website and see what's having in this website.</p>
+            <a href="#contents">visit <i class="fa-solid fa-chevron-down"></i></a>
         </div>
-        <h3>Project 2</h3>
-                <p><a href="http://kobralocks.com" target="_blank"><i class="fa fa-link"></i> kobralocks.com</a></p>
-        <p>This website is vuln webdav. Trought the ftp open, enemies will upload file free without admin permissions.</p>
-        <p>Don't worry about this website because it's not in controls now and an admin was standed a new same website but at the other server.</p>
-        <span>{website live preview}</span>
-        <iframe src="http://kobralocks.com" frameborder="0" height="300px" width="100%">not supported</iframe>
-      </article>
-      <!--
-      <article class="thread">
-        <div class="iconinfo">
+        <div class="section" id="contents">
+            <h2>Android Terminal <i class="fa fa-terminal"></i></h2>
+            <br>
+            <img src="https://f-droid.org/repo/com.termux/en-US/icon_7jMZ7XD80oeucmGEaTwktIRZexLtGWvJfKdVD6Wu2SI=.png" width="200px" alt="pic">
+            <p>Termux is an Android terminal emulator and Linux environment application that works directly with no rooting or setup required. A minimal base system is installed automatically, additional packages are available using the package manager.</p>
+            <p><sup>Added by Admin :</sup><br>
+            Like a distro linux but in Android version and no rooting but it can be root if you force it into rooting. So you can run linux command on termux android.
+            </p>
+            <p>If you aren't understand. Here i will teach you a little bit of termux command. <i class="fa-solid fa-school"></i></p>
+            <span style="color:aliceblue;">from <a href="#">termux wiki</a></span><br>
+            <br>
+            <p>Download Termux <a href="https://f-droid.org/repo/com.termux_118.apk" style="text-align:center;"><i class="fa-solid fa-download"></i> here</a></p>            
         </div>
-        <h3>Project 0</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius itaque dignissimos velit commodi fugit est non quidem labore cupiditate natus?</p>
-      </article>
-      -->
-    </section>
-    <section id="features">
-        <h2>Html Script Tester</h2>
-        <p>will available!</p>
-        <p></p>
-    </section>
-    <section id="about">
-      <h2>About</h2>
-      <p>Here i just upload my work actually don't known by somewhere?</p>
-    </section>
+        <!--
+        <div class="section">
+            <h2>Content 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque sunt laudantium dolorum, porro dolores! Tempora voluptatum laborum similique, dolor beatae eos quaerat est, aliquam numquam repellat velit. Ullam, vero. Accusantium!</p>
+            
+        </div>
+        -->
+    </article>
+<div id="toast" class="toast">
+  <span class="close-btn" onclick="closeToast()">&times;</span><i class="fa-solid fa-triangle-exclamation"></i><br><br>
+  All shown on this website just for<br>educational purposes only not for illegal acts!
+</div>
+    <footer>
+        <div class="copy">
+            <span>Theme by <a href="#">Mika259</a></span>
+            <span>&copy; 2023 Danyl Hakm. All rights reserved</span>
+            <span>Designed by Mika259</span>
+            <span>Coded Scripting by Mika259</span>
+            <span>HTML & CSS</span>
+            <span><a href="#">mika259.github.io/web</a></span>
+            <br>
+            <span>Credit : <a href="#">#mika259</a> <a href="#">#font-awesome</a></span>
+            <p><font color="red">DISCLAIMER</font> : what is shown on this website is for learning purposes only, do not use it for illegal acts.<br>My purpose in making this website is just to share some pieces of knowledge to continue the fight for knowledge and hopefully it will be used by others.</p>
+        </div>
+        <div class="google_translate_element"></div>
+    </footer>
+    <script src="/web/assets/script.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p><a href="#"><i class="fa-brands fa-youtube" style="color: red;"></i> Youtube</a><a href="#" ><i class="fa-brands fa-telegram" style="color: rgb(7, 135, 255);"></i> Telegram</a>
-      <a href="#"><i class="fa-brands fa-github"></i> Github</a>
-      <a href="#"><i class="fa-brands fa-google" style="color:lightblue;"></i> Google</a></p>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2023 My Hide Projects. All rights reserved.</p>
-  </footer>
-  <script>
-    window.addEventListener('DOMContentLoaded', function() {
-  var articles = document.querySelectorAll('.thread');
-  var tagCount = articles.length;
-  var tagCountElement = document.getElementById('tagCount');
-  tagCountElement.textContent = "("+tagCount+")";
-});
-
-  </script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
-</html>
+    </html>
