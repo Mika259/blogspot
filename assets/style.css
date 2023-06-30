@@ -254,7 +254,8 @@ article {
     color:aliceblue;
     border:1px #ABABAB solid;
     border-radius: 4px;
+    font-size:17px;
 }
 .btnback:hover{
-    background-color: #2C2C2C;
+    background-color: darkgray;
     }
