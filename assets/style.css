@@ -291,3 +291,20 @@
         .pre #py-code{
             color: #159cf8;
         }
+        .btn{
+            padding: 8px 16px;
+            background-image: linear-gradient(to right,#3a76af,#203b7e);
+            border-radius: 5px;
+            text-decoration: none;
+            box-shadow: 0 0 12px #000000c5;
+            transition-duration: .2s;
+        }
+        .btn .load{
+            display: none;
+        }
+        .btn:active .read{
+            display: none;
+        }
+        .btn:active .load{
+            display: inline-block;
+        }
